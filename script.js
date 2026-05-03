@@ -1,12 +1,5 @@
 AOS.init();
 
-// INTRO ANIMATION
-window.onload = () => {
-    setTimeout(() => {
-        document.getElementById("intro").style.display = "none";
-    }, 800); // under 1 second
-};
-
 // THEME TOGGLE
 document.getElementById("theme-toggle").onclick = () => {
     document.body.classList.toggle("light");
@@ -23,4 +16,5 @@ function type() {
         setTimeout(type, 50);
     }
 }
+
 type();
