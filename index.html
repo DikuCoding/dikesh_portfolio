@@ -8,21 +8,19 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- INTRO OVERLAY -->
-<div id="intro">
-    <img src="assets/profile.jpg" alt="Intro Image">
-</div>
 
 <!-- NAV -->
 <nav class="navbar">
     <h2>DK</h2>
     <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -39,6 +37,18 @@
 <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I build clean, modern and engaging web experiences.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">SEO</div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
@@ -62,12 +72,21 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <a href="#">LinkedIn</a>
+    <div class="contact-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
 </section>
+
+<footer>
+    <p>© 2026 Dikesh Khagi</p>
+</footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
