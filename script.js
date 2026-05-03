@@ -1,9 +1,26 @@
-// AOS Init
 AOS.init();
 
-// Theme Toggle
-const toggle = document.getElementById("theme-toggle");
+// INTRO ANIMATION
+window.onload = () => {
+    setTimeout(() => {
+        document.getElementById("intro").style.display = "none";
+    }, 800); // under 1 second
+};
 
-toggle.addEventListener("click", () => {
+// THEME TOGGLE
+document.getElementById("theme-toggle").onclick = () => {
     document.body.classList.toggle("light");
-});
+};
+
+// TYPING EFFECT
+const text = "Hi, I’m Dikesh Khagi — crafting modern digital experiences.";
+let i = 0;
+
+function type() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 50);
+    }
+}
+type();
