@@ -1,11 +1,11 @@
 AOS.init();
 
-// THEME TOGGLE
+// theme toggle
 document.getElementById("theme-toggle").onclick = () => {
     document.body.classList.toggle("light");
 };
 
-// TYPING EFFECT
+// typing effect
 const text = "Hi, I’m Dikesh Khagi — crafting modern digital experiences.";
 let i = 0;
 

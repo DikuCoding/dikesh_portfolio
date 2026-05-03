@@ -1,39 +1,146 @@
-/* SKILLS GRID */
+:root {
+    --bg: #0b0b0f;
+    --text: #ffffff;
+    --accent: #a855f7;
+    --secondary: #ef4444;
+}
+
+body.light {
+    --bg: #ffffff;
+    --text: #111111;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SKILLS */
+#skills {
+    padding: 40px;
+    text-align: center;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .skill-card {
     background: rgba(255,255,255,0.05);
     padding: 20px;
     border-radius: 15px;
-    text-align: center;
-    backdrop-filter: blur(10px);
     transition: 0.3s;
+    border: 1px solid transparent;
 }
 
 .skill-card:hover {
     transform: translateY(-8px);
-    border: 1px solid #a855f7;
+    border: 1px solid var(--accent);
 }
 
 /* CONTACT */
+#contact {
+    padding: 40px;
+    text-align: center;
+}
+
 .contact-icons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    font-size: 28px;
+    gap: 30px;
 }
 
 .contact-icons a {
+    font-size: 28px;
     color: var(--accent);
     transition: 0.3s;
 }
 
 .contact-icons a:hover {
+    color: var(--secondary);
     transform: scale(1.2);
-    color: #ef4444;
+}
+/* HERO LAYOUT */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* TEXT */
+.hero-text {
+    max-width: 500px;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+    transition: 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
 }
