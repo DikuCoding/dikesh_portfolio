@@ -101,3 +101,4 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 }
 
 currentYear.textContent = String(new Date().getFullYear());
+g
