@@ -275,12 +275,12 @@ button:focus-visible {
     text-transform: uppercase;
 }
 
-.eyebrow::before {
+/* .eyebrow::before {
     content: "";
     width: 1.75rem;
     height: 1px;
     background: currentColor;
-}
+} */
 
 h1,
 h2,
